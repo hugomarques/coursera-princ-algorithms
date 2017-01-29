@@ -90,8 +90,8 @@ public class Percolation {
     }
 
     private void validateCoordinates(int row, int col) {
-        if (row <= 0 || row > n) throw new IllegalArgumentException(String.format("row must be between 1 and %s", n));
-        if (col <= 0 || col > n) throw new IllegalArgumentException(String.format("col must be between 1 and %s", n));
+        if (row <= 0 || row > n) throw new IndexOutOfBoundsException(String.format("row must be between 1 and %s", n));
+        if (col <= 0 || col > n) throw new IndexOutOfBoundsException(String.format("col must be between 1 and %s", n));
     }
 
     public static void main(String[] args) {
