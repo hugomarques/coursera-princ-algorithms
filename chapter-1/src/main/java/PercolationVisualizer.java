@@ -62,6 +62,8 @@ public class PercolationVisualizer {
     }
 
     public static void main(String[] args) {
+        System.out.println("Working Directory = " +
+                System.getProperty("user.dir"));
         In in = new In(args[0]);      // input file
         int N = in.readInt();         // N-by-N percolation system
 

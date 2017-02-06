@@ -96,20 +96,20 @@ public class Percolation {
 
     public static void main(String[] args) {
         Percolation percolation = new Percolation(3);
-        System.out.println(percolation.getPosition(1,1));
-        System.out.println(percolation.getPosition(1,2));
-        System.out.println(percolation.getPosition(1,3));
-        System.out.println(percolation.getPosition(2,1));
-        System.out.println(percolation.getPosition(2,2));
-        System.out.println(percolation.getPosition(2,3));
-        System.out.println(percolation.getPosition(3,1));
-        System.out.println(percolation.getPosition(3,2));
-        System.out.println(percolation.getPosition(3,3));
+        System.out.println(percolation.getPosition(1, 1));
+        System.out.println(percolation.getPosition(1, 2));
+        System.out.println(percolation.getPosition(1, 3));
+        System.out.println(percolation.getPosition(2, 1));
+        System.out.println(percolation.getPosition(2, 2));
+        System.out.println(percolation.getPosition(2, 3));
+        System.out.println(percolation.getPosition(3, 1));
+        System.out.println(percolation.getPosition(3, 2));
+        System.out.println(percolation.getPosition(3, 3));
         System.out.println("Done building.");
-        percolation.open(1,1);
-        percolation.open(2,1);
-        percolation.open(2,2);
-        percolation.open(2,3);
+        percolation.open(1, 1);
+        percolation.open(2, 1);
+        percolation.open(2, 2);
+        percolation.open(2, 3);
 
         System.out.println(percolation.isFull(2, 2));
         System.out.println(percolation.percolates());
